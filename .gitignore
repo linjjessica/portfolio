@@ -11,3 +11,6 @@
 !images/header/**
 !images/experience/technologies/
 !images/experience/technologies/**
+!fonts/
+!fonts/*.ttf
+!fonts/*.otf

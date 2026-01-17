@@ -2,23 +2,506 @@
 <html lang="en">
 
 <!--
-WRITTEN BY: Your name here
-EMAIL: Your email here
+WRITTEN BY: Jessica Lin
+EMAIL: jessil46@uci.edu
 -->
 
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="Your name here">
-  <meta name="description" content="description of your page">
-   <!-- you would link to an external stylesheet here! -->
-   <!-- you would also link to Bootstrap here! -->
-  <title>title here</title>
+  <meta name="author" content="Jessica Lin">
+  <meta name="description" content="Jessica Lin Portfolio">
+  <title>Jessica Lin | Portfolio</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles/button.css">
+  <link rel="stylesheet" href="./styles/containers.css">
+  <link rel="stylesheet" href="./styles/dropdown_style.css">
+  <link rel="stylesheet" href="./styles/experience.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/html_elements.css">
+  <link rel="stylesheet" href="./styles/images.css">
+  <link rel="stylesheet" href="./styles/interactive.css">
+  <link rel="stylesheet" href="./styles/experience.css">
+  <link rel="stylesheet" href="./styles/navbar.css">
+  <link rel="stylesheet" href="./styles/text.css">
 </head>
+
 <body>
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
-  </p>
+
+  <!-- HEADER (replace CustomHeader) -->
+  <div>
+    <div class="navbar">
+      <div class="navbar-nav-content">
+        <div class="container">
+          <div class="pink_title">Jessica Lin</div>
+          <div class="dark_title">Full Stack Developer</div>
+          <div class="dark_title">I build reliable, scalable, and complex web and mobile applications.</div>
+        </div>
+
+        <div class="row_container">
+          <div class="nav-btn-container">
+            <button class="nav-btn active" data-target="about_me">About Me</button>
+            <button class="nav-btn" data-target="experience">Experience</button>
+            <button class="nav-btn" data-target="skills">Skills</button>
+            <button class="nav-btn" data-target="projects">Projects</button>
+            <button class="nav-btn" data-target="extracurriculars">Extracurriculars</button>
+          </div>
+        </div>
+
+        <div class="row_container">
+          <div class="icon-btn-container">
+            <a href="mailto:linjjessica@gmail.com" class="icon-btn">
+              <img src="./images/header/email.png" alt="Email">
+            </a>
+          </div>
+
+          <div class="icon-btn-container">
+            <a href="https://www.linkedin.com/in/jjessicalin" target="_blank" class="icon-btn">
+              <img src="./images/header/linkedin.png" alt="LinkedIn">
+            </a>
+          </div>
+
+          <div class="icon-btn-container">
+            <a href="https://github.com/linjjessica" target="_blank" class="icon-btn">
+              <img src="./images/header/github.png" alt="GitHub">
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- MAIN CONTENT -->
+
+  <div class="right-side">
+    <div class="main-content">
+
+      <!-- ABOUT ME -->
+      <section id="about_me">
+        <div class="dark_header">About Me</div>
+        <div class="dark_line"></div>
+
+        <div class="row_container">
+          <div class="image_wrapper">
+            <div class="rounded_wrapper">
+              <img
+                src="./images/welcome/website_headshot.jpg"
+                alt="Personal Headshot"
+                class="image">
+            </div>
+          </div>
+
+          <p>
+            Hello world! My name is <b>Jessica Lin</b>, and welcome to my personal portfolio 
+            website. I coded this from scratch using JavaScript, React, HTML, and CSS, and deployed
+            it statically using Github pages. This website is best for desktop-sized screens, however it is
+            fully dynamic for screens of width 300 pixels and greater. Feel free to <b>reach out to me 
+            at&nbsp;<a href="mailto:linjjessica@gmail.com" class="email-link">linjjessica@gmail.com</a>!</b>
+            <br><br>
+
+            I am a first-generation <b>software engineer</b> studying
+            <b>Computer Science and Business Administration</b> at the
+            <b>University of California, Irvine</b>, and am currently based in Los Angeles, California.
+          </p>
+        </div>
+
+        <div class="uci_container">
+          <img src="./images/welcome/UCILogo.png" alt="UC Irvine Logo" class="icon">
+          <div class="row_container_left_aligned3">
+            <p>
+              <b>
+                University of California, Irvine<br>
+                B.S. Computer Science<br>
+                B.A. Business Administration
+              </b>
+            </p>
+          </div>
+        </div>
+
+        <br />
+        <br />
+        I specialize in <b>full-stack mobile and web app development</b>, with a focus on 
+        sleek design and high-performance. I feel fortunate that I get to turn ideas into polished, 
+        intuitive products and <b>tackle complex problems through technical solutions. </b>
+        This website showcases the professional and personal projects that I have been working on.
+        <br />
+        <br />
+        In my freetime, I enjoy keeping myself busy with new hobbies. The list consists of traveling, thrifting, skiing, 
+        working out, and gaming. Ask me about my crawl from Budapest to Prague!
+        <br />
+        <br />
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <div class="dark_header">Experience</div>
+        <div class="dark_line"></div>
+
+        <div class="experience_container">
+          <div class="container_20">Jun–Aug 2026</div>
+          <div class="container_80">
+            <div class="row_container_left_aligned">
+              <img src="./images/experience/EYLogo.png" class="icon" alt="EY">
+              <div class="company_text">Ernst & Young</div>
+            </div>
+
+            <div class="dark_large_text">Technology Consulting Intern</div>
+
+            <p>
+              Built a Python/Pandas data-validation tool that automated 
+              the data validation process across 500+ inconsistent CSV files. 
+              Designed and implemented a Streamlit UI that let users upload files, 
+              view reports, and download results.
+            </p>
+
+            <video autoplay loop muted playsinline style="width:100%">
+              <source src="./images/experience/DataCleanerGif.mov" type="video/mp4">
+            </video>
+            <div class="row_container_left_aligned2">
+              <div class="curved-outline-box">
+                <p> Python </p>
+              </div>
+              <div class="curved-outline-box">
+                <p> Pandas </p>
+              </div>
+              <div class="curved-outline-box">
+                <p> Streamlit </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience_container">
+          <div class="container_20">Oct 2025–Jun 2026</div>
+          <div class="container_80">
+            <div class="row_container_left_aligned">
+              <img src="./images/experience/TroicomLogo.png" class="icon" alt="Troicom">
+              <div class="company_text">Troicom</div>
+            </div>
+
+            <div class="dark_large_text">Software Engineering Intern</div>
+
+            <p>
+              Redesigned 11 mobile screens for Troicom's DropGO app, a LoRa-connected game. 
+              Authored 5 C# scripts to connect UI/UX to backend logic, including a secure 
+              sign-out flow and Bluetooth device toggling page. Oversaw the end-to-end
+              app deployment process, including producing and editing 7 app store previews and  
+              2 professional app demo videos.
+            </p>
+
+            <img src="./images/experience/TroicomAppScreens.png" class="image" alt="Troicom App">
+          
+            <div class="row_container_left_aligned2">
+              <div class="curved-outline-box">
+                <p> C# </p>
+              </div>
+              <div class="curved-outline-box">
+                <p> AWS </p>
+              </div>
+              <div class="curved-outline-box">
+                <p> Unity </p>
+              </div>
+              <div class="curved-outline-box">
+                <p> Canva </p>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills">
+        <div class="dark_header">Skills</div>
+              <div class="dark_line"></div>
+              <p></p>
+              <div class="row_container"><div class="large_pink_text">
+                &emsp;Backend:&emsp;<br />
+                <div class="row_container"><div class="pink_line"></div></div></div>
+              </div>
+              <div class="row_container">
+                <div class="skill_card"><div class="skill_inner">
+                  <div class="skill_front">
+                    <img src="./images/experience/technologies/PythonLogo.png" alt="Python"/>
+                  </div>
+                  <div class="skill_back">
+                    <div class="skill_back_text">Python</div>
+                  </div>
+                </div></div>
+                <div class="skill_card"><div class="skill_inner">
+                  <div class="skill_front">
+                    <img src="./images/experience/technologies/C++Logo.png" alt="C++"/>
+                  </div>
+                  <div class="skill_back">
+                    <div class="skill_back_text">C++</div>
+                  </div>
+                </div></div>
+                <div class="skill_card"><div class="skill_inner">
+                  <div class="skill_front">
+                    <img src="./images/experience/technologies/CSharpLogo.png" alt="C#"/>
+                  </div>
+                  <div class="skill_back">
+                    <div class="skill_back_text">C#</div>
+                  </div>
+                </div></div>
+                <div class="skill_card"><div class="skill_inner">
+                  <div class="skill_front">
+                    <img src="./images/experience/technologies/CLogo.png" alt="C"/>
+                  </div>
+                  <div class="skill_back">
+                    <div class="skill_back_text">C</div>
+                  </div>
+                </div></div>
+                <div class="skill_card"><div class="skill_inner">
+                  <div class="skill_front">
+                    <img src="./images/experience/technologies/JavaScriptLogo.png" alt="JavaScript"/>
+                  </div>
+                  <div class="skill_back">
+                    <div class="skill_back_text">JavaScript</div>
+                  </div>
+                </div></div>
+                <div class="skill_card"><div class="skill_inner">
+                  <div class="skill_front">
+                    <img src="./images/experience/technologies/JavaLogo.png" alt="Java"  />
+                  </div>
+                  <div class="skill_back">
+                    <div class="skill_back_text">Java</div>
+                  </div>
+                </div></div>
+                <div class="skill_card"><div class="skill_inner">
+                  <div class="skill_front">
+                    <img src="./images/experience/technologies/NodeLogo.png" alt="Node"  />
+                  </div>
+                  <div class="skill_back">
+                    <div class="skill_back_text">Node</div>
+                  </div>
+                </div></div>
+                <div class="skill_card"><div class="skill_inner">
+                  <div class="skill_front">
+                    <img src="./images/experience/technologies/PostgreSQLLogo.png" alt="PostgreSQL"  />
+                  </div>
+                  <div class="skill_back">
+                    <div class="skill_back_text">PostgreSQL</div>
+                  </div>
+                </div></div>
+                <div class="skill_card"><div class="skill_inner">
+                  <div class="skill_front">
+                    <img src="./images/experience/technologies/PythonDjango.png" alt="Django"  />
+                  </div>
+                  <div class="skill_back">
+                    <div class="skill_back_text">MySQL</div>
+                  </div>
+                </div></div>
+                <div class="skill_card"><div class="skill_inner">
+                  <div class="skill_front">
+                    <img src="./images/experience/technologies/MySQLLogo.png" alt="MySQL"  />
+                  </div>
+                  <div class="skill_back">
+                    <div class="skill_back_text">MySQL</div>
+                  </div>
+                </div></div>
+                <div class="skill_card"><div class="skill_inner">
+                  <div class="skill_front">
+                    <img src="./images/experience/technologies/FlaskLogo.png" alt="Flask"  />
+                  </div>
+                  <div class="skill_back">
+                    <div class="skill_back_text">Flask</div>
+                  </div>
+                </div></div>
+                <div class="skill_card"><div class="skill_inner">
+                  <div class="skill_front">
+                    <img src="./images/experience/technologies/MongoDBLogo.png" alt="MongoDB"  />
+                  </div>
+                  <div class="skill_back">
+                    <div class="skill_back_text">MongoDB</div>
+                  </div>
+                </div></div>
+                
+
+              </div>
+              <div class="row_container"><div class="large_pink_text">
+                &emsp;Frontend:&emsp;<br />
+                <div class="row_container"><div class="pink_line"></div></div></div>
+              </div>
+              <div class="row_container">
+                <div class="skill_card"><div class="skill_inner">
+                  <div class="skill_front">
+                    <img src="./images/experience/technologies/JavaScriptLogo.png" alt="JavaScript"  />
+                  </div>
+                  <div class="skill_back">
+                    <div class="skill_back_text">JavaScript</div>
+                  </div>
+                </div></div>
+                <div class="skill_card"><div class="skill_inner">
+                  <div class="skill_front">
+                    <img src="./images/experience/technologies/ReactLogo.png" alt="React"  />
+                  </div>
+                  <div class="skill_back">
+                    <div class="skill_back_text">React</div>
+                  </div>
+                </div></div>
+                <div class="skill_card"><div class="skill_inner">
+                  <div class="skill_front">
+                    <img src="./images/experience/technologies/HTMLLogo.png" alt="HTML"  />
+                  </div>
+                  <div class="skill_back">
+                    <div class="skill_back_text">HTML</div>
+                  </div>
+                </div></div>
+                <div class="skill_card"><div class="skill_inner">
+                  <div class="skill_front">
+                    <img src="./images/experience/technologies/CSSLogo.png" alt="CSS"  />
+                  </div>
+                  <div class="skill_back">
+                    <div class="skill_back_text">CSS</div>
+                  </div>
+                </div></div>
+                <div class="skill_card"><div class="skill_inner">
+                  <div class="skill_front">
+                    <img src="./images/experience/technologies/TypescriptLogo.png" alt="TypeScript"  />
+                  </div>
+                  <div class="skill_back">
+                    <div class="skill_back_text">TypeScript</div>
+                  </div>
+                </div></div>
+                
+              </div>
+
+              <div class="row_container"><div class="large_pink_text">
+                &emsp;Developer Tools:&emsp;<br />
+                <div class="row_container"><div class="pink_line"></div></div></div>
+              </div>
+              
+              <div class="row_container">
+                <div class="skill_card"><div class="skill_inner">
+                  <div class="skill_front">
+                      <img src="./images/experience/technologies/AWSLogo.png" alt="AWS"  />
+                    </div>
+                    <div class="skill_back">
+                      <div class="skill_back_text">AWS</div>
+                    </div>
+                  </div></div>
+                <div class="skill_card"><div class="skill_inner">
+                  <div class="skill_front">
+                      <img src="./images/experience/technologies/GitLogo.png" alt="Git"  />
+                    </div>
+                    <div class="skill_back">
+                      <div class="skill_back_text">Git</div>
+                    </div>
+                  </div></div>
+              </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <div class="dark_header">Projects</div>
+        <div class="dark_line"></div>
+        <div class="experience_container">
+          <div class="container_20">Dec 2025–Jan 2026</div>
+            <div class="container_80">
+              <div class="row_container_left_aligned">
+                <img src="./images/experience/StackLogo.png" class="icon" alt="DSP">
+                <div class="company_text">Stack</div>
+              </div>
+
+              <div class="dark_large_text">Founding Engineer</div>
+
+              <div class="image_border">
+                <img src="./images/experience/DSPWebsite.png" class="rounded_wrapper" alt="DSP Website">
+              </div>
+              <div class="dark_medium_text">By Jessica Lin and Isaias Gonzales</div>
+
+              <p>
+              <ul>
+                <li>Built a full-stack cashback optimization mobile app, processing 100+ 
+                  transactions per user session to identify missed rewards</li>
+                <li>Deployed a serverless backend on AWS using SAM with API Gateway, Lambda, DynamoDB, and IAM</li>
+                <li>Integrated Plaid APIs to allow users to connect bank information</li>
+                <li>Refactored the existing SwiftUI frontend to support new backend features</li>
+              </ul>
+              </p>
+          </div>
+        </div>
+
+        <div class="experience_container">
+          <div class="container_20">Mar 2024–Jun 2024</div>
+            <div class="container_80">
+              <div class="row_container_left_aligned">
+                <img src="./images/experience/DSPLogo.png" class="icon" alt="DSP">
+                <div class="company_text">Search Engine</div>
+              </div>
+              <div></div>
+
+              <ul>
+                <li>Engineered a search engine with inverted indexing, HTML parsing, 
+                  tag-based weighting, and stemming to better result relevance</li>
+                <li>Developed vector space model with custom TF-IDF scoring, creating 
+                  efficient query pipeline for fast, relevant top-K result retrieval </li>
+                <li>Enforced memory-efficient indexing system for large documents with 
+                  performance monitoring and strategic partial index merging</li>
+
+              </ul>
+          </div>
+        </div>
+
+          
+      </section>
+
+      <!-- EXTRACURRICULARS -->
+      <section id="extracurriculars">
+        <div class="dark_header">Extracurriculars</div>
+        <div class="dark_line"></div>
+
+        <div class="experience_container">
+          <div class="container_20">May 2023–Jan 2024</div>
+          <div class="container_80">
+            <div class="row_container_left_aligned">
+              <img src="./images/experience/DSPLogo.png" class="icon" alt="DSP">
+              <div class="company_text">Delta Sigma Pi</div>
+            </div>
+
+            <div class="dark_large_text">Director of Technology</div>
+
+            <div class="image_border">
+              <img src="./images/experience/DSPWebsite.png" class="rounded_wrapper" alt="DSP Website">
+            </div>
+
+            <p>
+              Modernized website architecture and automated data workflows
+              for 45+ members.
+            </p>
+          </div>
+        </div>
+        
+        <div class="experience_container">
+          <div class="container_20">May 2023–Jan 2024</div>
+          <div class="container_80">
+            <div class="row_container_left_aligned">
+              <img src="./images/experience/DSPLogo.png" class="icon" alt="DSP">
+              <div class="company_text">Donald Bren School of Information and 
+                Computer Sciences</div>
+            </div>
+
+            <div class="dark_large_text">Learning Assistant - Introduction to Python</div>
+            <div class="image_border">
+              <img src="./images/experience/DSPWebsite.png" class="rounded_wrapper" alt="DSP Website">
+            </div>
+
+            <p>
+              Modernized website architecture and automated data workflows
+              for 45+ members.
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>

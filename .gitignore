@@ -1,7 +1,6 @@
 .DS_Store
 
 # Temporary: don't push big assets
-*.png
 *.jpg
 *.jpeg
 *.ttf

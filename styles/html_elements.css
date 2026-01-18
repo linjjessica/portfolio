@@ -24,11 +24,11 @@ body {
 
 p {
   font-size: clamp(.5rem, 3vw, 1rem);
-  font-family: inherit;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
 }
 
 b {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
   font-weight: 800;
 }
 
@@ -46,7 +46,7 @@ footer {
   padding: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "CourierPS";
+  font-family: 'Courier New', Courier, monospace, sans-serif;
   /* outline: 1px solid rgba(255,0,0,0.2); */
 }
 

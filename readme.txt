@@ -10,26 +10,34 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
-*/10
-- */1 Readme
-- */2 Basic HTML content
-- */1 Basic CSS styling
-- */1 Advanced feature
-- */2 Responsive layout
-- */1 Passes validation checks
-- */2 Embraces spirit of the assignment
+10/10
+- 1/1 Readme
+- 2/2 Basic HTML content
+- 1/1 Basic CSS styling
+- 1/1 Advanced feature
+- 2/2 Responsive layout
+- 1/1 Passes validation checks
+- 2/2 Embraces spirit of the assignment
 
 2. What (a) basic features, (b) CSS features, and (c) advanced features did you include in your portfolio?
 
 (a) Basic features
 
-
+- Included least one image, with descriptive alt attribute
+- Included appropriate headings and paragraph text
+- Links to external pages can be found in my hyperlinked email or the Github, LinkedIn, or Email buttons on the navbar
+- Added cutom icons for the Github, LinkedIn, or Email Buttons
 
 (b) CSS features
 
-
+- Modified padding and margins to indent content and enhance readability
+- Modified link and text color to be visually appealing
+- Added custom font(s) from Google fonts to add more personality
 
 (c) Advanced features
+
+- Created a more complex page layout by including a navigation bar that uses scroll observation highlighting
+- Embedded HTML5 media (.mov) with an appropriate fallback
 
 
 

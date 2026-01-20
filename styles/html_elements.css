@@ -32,6 +32,11 @@ b {
   font-weight: 800;
 }
 
+em {
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-weight: 800;
+}
+
 h1 {
   color: #491a37;
   font-size: clamp(.8rem, 3vw, 1.5rem);

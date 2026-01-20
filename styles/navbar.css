@@ -66,6 +66,7 @@
 }
 
 .nav-btn-container {
+  list-style: none;
   margin: clamp(0rem, .5vw, 1rem);
   display: flex;
   flex-direction: column;
@@ -95,6 +96,12 @@
   /* color: rgb(152, 152, 152); */
   text-decoration: underline;
 }
+
+/* .nav-list {
+  list-style: none;
+}
+.nav-list li { margin: 0; padding: 0; } */
+
 
 @media (max-width: 720px) {
   .jessica-lin-text img {

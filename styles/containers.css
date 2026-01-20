@@ -182,16 +182,6 @@
   height: calc(100vh - 50px - 73px);
 }
 
-.half-block {
-  flex: none; /* Equal amount of space */
-  /* min-width: 420px; */
-  width: 50%; /* 50% of container's width */
-  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
-  text-align: left; /* Centers the text horizontally */
-  padding: 1rem; /* Adjust the padding as necessary */
-  justify-content: row;
-}
-
 .third-block {
   display: flex;
   flex-direction: column; /* Stack children vertically */
@@ -223,12 +213,5 @@
     flex: 0 0 45%; 
     /* min-width: 350px; */
     /* padding-right: 0px; */
-  }
-
-  . {
-    /* padding-top: 10px;
-    padding-bottom: 10px;
-    flex: 0 0 45%;  */
-    /* min-width: 350px; */
   }
 }

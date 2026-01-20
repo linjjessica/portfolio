@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <!--
 WRITTEN BY: Jessica Lin
@@ -12,7 +12,7 @@ EMAIL: jessil46@uci.edu
   <meta name="description" content="Jessica Lin Portfolio">
   <title>Jessica Lin | Portfolio</title>
 
-  <!-- Styles -->
+  <!-- STYLES -->
   <link rel="stylesheet" href="./styles/button.css">
   <link rel="stylesheet" href="./styles/containers.css">
   <link rel="stylesheet" href="./styles/dropdown_style.css">
@@ -23,12 +23,13 @@ EMAIL: jessil46@uci.edu
   <link rel="stylesheet" href="./styles/interactive.css">
   <link rel="stylesheet" href="./styles/experience.css">
   <link rel="stylesheet" href="./styles/navbar.css">
+  <link rel="stylesheet" href="./styles/skip_content.css">
   <link rel="stylesheet" href="./styles/text.css">
 </head>
 
-<body>
+<body dir="ltr">
 
-  <!-- HEADER (replace CustomHeader) -->
+  <!-- HEADER -->
   <div>
     <div class="navbar">
       <div class="navbar-nav-content">
@@ -39,31 +40,31 @@ EMAIL: jessil46@uci.edu
         </div>
 
         <div class="row_container">
-          <div class="nav-btn-container">
-            <button class="nav-btn active" data-target="about_me">About Me</button>
-            <button class="nav-btn" data-target="experience">Experience</button>
-            <button class="nav-btn" data-target="skills">Skills</button>
-            <button class="nav-btn" data-target="projects">Projects</button>
-            <button class="nav-btn" data-target="extracurriculars">Extracurriculars</button>
-          </div>
+          <ul class="nav-btn-container">
+            <li><button class="nav-btn" data-target="about_me">About Me</button></li>
+            <li><button class="nav-btn" data-target="experience">Experience</button></li>
+            <li><button class="nav-btn" data-target="skills">Skills</button></li>
+            <li><button class="nav-btn" data-target="projects">Projects</button></li>
+            <li><button class="nav-btn" data-target="extracurriculars">Extracurriculars</button></li>
+          </ul>
         </div>
 
         <div class="row_container">
           <div class="icon-btn-container">
             <a href="mailto:linjjessica@gmail.com" class="icon-btn">
-              <img src="./images/header/email.png" alt="Email">
+              <img src="./images/header/email.png" alt="Email Jessica Lin" aria-label="Email Jessica Lin">
             </a>
           </div>
 
           <div class="icon-btn-container">
             <a href="https://www.linkedin.com/in/jjessicalin" target="_blank" class="icon-btn">
-              <img src="./images/header/linkedin.png" alt="LinkedIn">
+              <img src="./images/header/linkedin.png" alt="LinkedIn Jessica Lin" aria-label="LinkedIn Jessica Lin">
             </a>
           </div>
 
           <div class="icon-btn-container">
             <a href="https://github.com/linjjessica" target="_blank" class="icon-btn">
-              <img src="./images/header/github.png" alt="GitHub">
+              <img src="./images/header/github.png" alt="GitHub Jessica Lin" aria-label="GitHub Jessica Lin">
             </a>
           </div>
         </div>
@@ -89,22 +90,22 @@ EMAIL: jessil46@uci.edu
             <div class="rounded_wrapper">
               <img
                 src="./images/welcome/website_headshot.jpg"
-                alt="Personal Headshot"
+                alt="Image of personal headshot of Jessica Lin"
                 class="image">
             </div>
           </div>
 
           <p>
-            Hello world! My name is <b>Jessica Lin</b>, and welcome to my personal portfolio 
+            Hello world! My name is <strong>Jessica Lin</strong>, and welcome to my personal portfolio 
             website. I coded this from scratch using JavaScript, React, HTML, and CSS, and deployed
             it statically using Github pages. This website is best for desktop-sized screens, however it is
-            fully dynamic for screens of width 300 pixels and greater. Feel free to <b>reach out to me 
-            at&nbsp;<a href="mailto:linjjessica@gmail.com" class="email-link">linjjessica@gmail.com</a>!</b>
+            fully dynamic for screens of width 300 pixels and greater. Feel free to <strong>reach out to me 
+            at&nbsp;<a href="mailto:linjjessica@gmail.com" class="email-link">linjjessica@gmail.com</a>!</strong>
             <br><br>
 
-            I am a first-generation <b>software engineer</b> studying
-            <b>Computer Science and Business Administration</b> at the
-            <b>University of California, Irvine</b>, and am currently based in Los Angeles, California.
+            I am a first-generation <strong>software engineer</strong> studying
+            <strong>Computer Science and Business Administration</strong> at the
+            <strong>University of California, Irvine</strong>, and am currently based in Los Angeles, California.
           </p>
         </div>
 
@@ -112,20 +113,20 @@ EMAIL: jessil46@uci.edu
           <img src="./images/welcome/UCILogo.png" alt="UC Irvine Logo" class="icon">
           <div class="row_container_left_aligned3">
             <p>
-              <b>
+              <strong>
                 University of California, Irvine<br>
                 B.S. Computer Science<br>
                 B.A. Business Administration
-              </b>
+              </strong>
             </p>
           </div>
         </div>
 
         <br>
         <br>
-        I specialize in <b>full-stack mobile and web app development</b>, with a focus on 
+        I specialize in <strong>full-stack mobile and web app development</strong>, with a focus on 
         sleek design and high-performance. I feel fortunate that I get to turn ideas into polished, 
-        intuitive products and <b>tackle complex problems through technical solutions. </b>
+        intuitive products and <strong>tackle complex problems through technical solutions. </strong>
         This website showcases the professional and personal projects that I have been working on.
         <br>
         <br>
@@ -144,7 +145,7 @@ EMAIL: jessil46@uci.edu
           <div class="container_20">Jun–Aug 2026</div>
           <div class="container_80">
             <div class="row_container_left_aligned">
-              <img src="./images/experience/EYLogo.png" class="icon" alt="EY">
+              <img src="./images/experience/EYLogo.png" class="icon" alt="Ernst &amp; Young logo">
               <div class="company_text">Ernst & Young</div>
             </div>
 
@@ -178,7 +179,7 @@ EMAIL: jessil46@uci.edu
           <div class="container_20">Oct 2025–Jun 2026</div>
           <div class="container_80">
             <div class="row_container_left_aligned">
-              <img src="./images/experience/TroicomLogo.png" class="icon" alt="Troicom">
+              <img src="./images/experience/TroicomLogo.png" class="icon" alt="Troicom Logo">
               <div class="company_text">Troicom</div>
             </div>
 
@@ -192,7 +193,7 @@ EMAIL: jessil46@uci.edu
               2 professional app demo videos.
             </p>
 
-            <img src="./images/experience/TroicomAppScreens.png" class="image" alt="Troicom App">
+            <img src="./images/experience/TroicomAppScreens.png" class="image" alt="3 Troicom App Screen with the in-game app screen, logo screen, and augmented reality screen.">
           
             <div class="row_container_left_aligned2">
               <div class="curved-outline-box">
@@ -225,7 +226,7 @@ EMAIL: jessil46@uci.edu
               <div class="row_container">
                 <div class="skill_card"><div class="skill_inner">
                   <div class="skill_front">
-                    <img src="./images/experience/technologies/PythonLogo.png" alt="Python">
+                    <img src="./images/experience/technologies/PythonLogo.png" alt="Python Logo">
                   </div>
                   <div class="skill_back">
                     <div class="skill_back_text">Python</div>
@@ -233,7 +234,7 @@ EMAIL: jessil46@uci.edu
                 </div></div>
                 <div class="skill_card"><div class="skill_inner">
                   <div class="skill_front">
-                    <img src="./images/experience/technologies/C++Logo.png" alt="C++">
+                    <img src="./images/experience/technologies/C++Logo.png" alt="C++ Logo">
                   </div>
                   <div class="skill_back">
                     <div class="skill_back_text">C++</div>
@@ -241,7 +242,7 @@ EMAIL: jessil46@uci.edu
                 </div></div>
                 <div class="skill_card"><div class="skill_inner">
                   <div class="skill_front">
-                    <img src="./images/experience/technologies/CSharpLogo.png" alt="C#">
+                    <img src="./images/experience/technologies/CSharpLogo.png" alt="C# Logo">
                   </div>
                   <div class="skill_back">
                     <div class="skill_back_text">C#</div>
@@ -249,7 +250,7 @@ EMAIL: jessil46@uci.edu
                 </div></div>
                 <div class="skill_card"><div class="skill_inner">
                   <div class="skill_front">
-                    <img src="./images/experience/technologies/CLogo.png" alt="C">
+                    <img src="./images/experience/technologies/CLogo.png" alt="C Logo">
                   </div>
                   <div class="skill_back">
                     <div class="skill_back_text">C</div>
@@ -257,7 +258,7 @@ EMAIL: jessil46@uci.edu
                 </div></div>
                 <div class="skill_card"><div class="skill_inner">
                   <div class="skill_front">
-                    <img src="./images/experience/technologies/JavaScriptLogo.png" alt="JavaScript">
+                    <img src="./images/experience/technologies/JavaScriptLogo.png" alt="JavaScript Logo">
                   </div>
                   <div class="skill_back">
                     <div class="skill_back_text">JavaScript</div>
@@ -265,7 +266,7 @@ EMAIL: jessil46@uci.edu
                 </div></div>
                 <div class="skill_card"><div class="skill_inner">
                   <div class="skill_front">
-                    <img src="./images/experience/technologies/JavaLogo.png" alt="Java">
+                    <img src="./images/experience/technologies/JavaLogo.png" alt="Java Logo">
                   </div>
                   <div class="skill_back">
                     <div class="skill_back_text">Java</div>
@@ -273,7 +274,7 @@ EMAIL: jessil46@uci.edu
                 </div></div>
                 <div class="skill_card"><div class="skill_inner">
                   <div class="skill_front">
-                    <img src="./images/experience/technologies/NodeLogo.png" alt="Node">
+                    <img src="./images/experience/technologies/NodeLogo.png" alt="Node Logo">
                   </div>
                   <div class="skill_back">
                     <div class="skill_back_text">Node</div>
@@ -281,7 +282,7 @@ EMAIL: jessil46@uci.edu
                 </div></div>
                 <div class="skill_card"><div class="skill_inner">
                   <div class="skill_front">
-                    <img src="./images/experience/technologies/PostgreSQLLogo.png" alt="PostgreSQL">
+                    <img src="./images/experience/technologies/PostgreSQLLogo.png" alt="PostgreSQL Logo">
                   </div>
                   <div class="skill_back">
                     <div class="skill_back_text">PostgreSQL</div>
@@ -289,7 +290,7 @@ EMAIL: jessil46@uci.edu
                 </div></div>
                 <div class="skill_card"><div class="skill_inner">
                   <div class="skill_front">
-                    <img src="./images/experience/technologies/PythonDjango.png" alt="Django">
+                    <img src="./images/experience/technologies/PythonDjango.png" alt="Django Logo">
                   </div>
                   <div class="skill_back">
                     <div class="skill_back_text">MySQL</div>
@@ -297,7 +298,7 @@ EMAIL: jessil46@uci.edu
                 </div></div>
                 <div class="skill_card"><div class="skill_inner">
                   <div class="skill_front">
-                    <img src="./images/experience/technologies/MySQLLogo.png" alt="MySQL">
+                    <img src="./images/experience/technologies/MySQLLogo.png" alt="MySQL Logo">
                   </div>
                   <div class="skill_back">
                     <div class="skill_back_text">MySQL</div>
@@ -305,7 +306,7 @@ EMAIL: jessil46@uci.edu
                 </div></div>
                 <div class="skill_card"><div class="skill_inner">
                   <div class="skill_front">
-                    <img src="./images/experience/technologies/FlaskLogo.png" alt="Flask">
+                    <img src="./images/experience/technologies/FlaskLogo.png" alt="Flask Logo">
                   </div>
                   <div class="skill_back">
                     <div class="skill_back_text">Flask</div>
@@ -313,7 +314,7 @@ EMAIL: jessil46@uci.edu
                 </div></div>
                 <div class="skill_card"><div class="skill_inner">
                   <div class="skill_front">
-                    <img src="./images/experience/technologies/MongoDBLogo.png" alt="MongoDB">
+                    <img src="./images/experience/technologies/MongoDBLogo.png" alt="MongoDB Logo">
                   </div>
                   <div class="skill_back">
                     <div class="skill_back_text">MongoDB</div>
@@ -329,7 +330,7 @@ EMAIL: jessil46@uci.edu
               <div class="row_container">
                 <div class="skill_card"><div class="skill_inner">
                   <div class="skill_front">
-                    <img src="./images/experience/technologies/JavaScriptLogo.png" alt="JavaScript">
+                    <img src="./images/experience/technologies/JavaScriptLogo.png" alt="JavaScript Logo">
                   </div>
                   <div class="skill_back">
                     <div class="skill_back_text">JavaScript</div>
@@ -337,7 +338,7 @@ EMAIL: jessil46@uci.edu
                 </div></div>
                 <div class="skill_card"><div class="skill_inner">
                   <div class="skill_front">
-                    <img src="./images/experience/technologies/ReactLogo.png" alt="React">
+                    <img src="./images/experience/technologies/ReactLogo.png" alt="React Logo">
                   </div>
                   <div class="skill_back">
                     <div class="skill_back_text">React</div>
@@ -345,7 +346,7 @@ EMAIL: jessil46@uci.edu
                 </div></div>
                 <div class="skill_card"><div class="skill_inner">
                   <div class="skill_front">
-                    <img src="./images/experience/technologies/HTMLLogo.png" alt="HTML">
+                    <img src="./images/experience/technologies/HTMLLogo.png" alt="HTML Logo">
                   </div>
                   <div class="skill_back">
                     <div class="skill_back_text">HTML</div>
@@ -353,7 +354,7 @@ EMAIL: jessil46@uci.edu
                 </div></div>
                 <div class="skill_card"><div class="skill_inner">
                   <div class="skill_front">
-                    <img src="./images/experience/technologies/CSSLogo.png" alt="CSS">
+                    <img src="./images/experience/technologies/CSSLogo.png" alt="CSS Logo">
                   </div>
                   <div class="skill_back">
                     <div class="skill_back_text">CSS</div>
@@ -361,7 +362,7 @@ EMAIL: jessil46@uci.edu
                 </div></div>
                 <div class="skill_card"><div class="skill_inner">
                   <div class="skill_front">
-                    <img src="./images/experience/technologies/TypescriptLogo.png" alt="TypeScript">
+                    <img src="./images/experience/technologies/TypescriptLogo.png" alt="TypeScript Logo">
                   </div>
                   <div class="skill_back">
                     <div class="skill_back_text">TypeScript</div>
@@ -378,7 +379,7 @@ EMAIL: jessil46@uci.edu
               <div class="row_container">
                 <div class="skill_card"><div class="skill_inner">
                   <div class="skill_front">
-                      <img src="./images/experience/technologies/AWSLogo.png" alt="AWS">
+                      <img src="./images/experience/technologies/AWSLogo.png" alt="AWS Logo">
                     </div>
                     <div class="skill_back">
                       <div class="skill_back_text">AWS</div>
@@ -386,7 +387,7 @@ EMAIL: jessil46@uci.edu
                   </div></div>
                 <div class="skill_card"><div class="skill_inner">
                   <div class="skill_front">
-                      <img src="./images/experience/technologies/GitLogo.png" alt="Git">
+                      <img src="./images/experience/technologies/GitLogo.png" alt="Git Logo">
                     </div>
                     <div class="skill_back">
                       <div class="skill_back_text">Git</div>
@@ -403,15 +404,12 @@ EMAIL: jessil46@uci.edu
           <div class="container_20">Dec 2025–Jan 2026</div>
             <div class="container_80">
               <div class="row_container_left_aligned">
-                <img src="./images/experience/StackLogo.png" class="icon" alt="DSP">
+                <img src="./images/experience/StackLogo.png" class="icon" alt="Stack Mobile Application Logo">
                 <div class="company_text">Stack</div>
               </div>
 
               <div class="dark_large_text">Founding Engineer</div>
 
-              <div class="image_border">
-                <img src="./images/experience/DSPWebsite.png" class="rounded_wrapper" alt="DSP Website">
-              </div>
               <div class="dark_medium_text">By Jessica Lin and Isaias Gonzales</div>
 
               <ul>
@@ -428,7 +426,7 @@ EMAIL: jessil46@uci.edu
           <div class="container_20">Mar 2024–Jun 2024</div>
             <div class="container_80">
               <div class="row_container_left_aligned">
-                <img src="./images/welcome/UCILogo.png" class="icon" alt="DSP">
+                <img src="./images/welcome/UCILogo.png" class="icon" alt="UC Irvine Logo">
                 <div class="company_text">Search Engine</div>
               </div>
               <div></div>
@@ -459,14 +457,14 @@ EMAIL: jessil46@uci.edu
           <div class="container_20">May 2023–Jan 2024</div>
           <div class="container_80">
             <div class="row_container_left_aligned">
-              <img src="./images/experience/DSPLogo.png" class="icon" alt="DSP">
+              <img src="./images/experience/DSPLogo.png" class="icon" alt="Delta Sigma Pi Logo">
               <div class="company_text">Delta Sigma Pi</div>
             </div>
 
             <div class="dark_large_text">Director of Technology</div>
 
             <div class="image_border">
-              <img src="./images/experience/DSPWebsite.png" class="rounded_wrapper" alt="DSP Website">
+              <img src="./images/experience/DSPWebsite.png" class="rounded_wrapper" alt="The Delta Sigma Pi website homepage">
             </div>
 
             <p>
@@ -477,10 +475,10 @@ EMAIL: jessil46@uci.edu
         </div>
         
         <div class="experience_container">
-          <div class="container_20">May 2023–Jan 2024</div>
+          <div class="container_20">Sep 2023–Dec 2024</div>
           <div class="container_80">
             <div class="row_container_left_aligned">
-              <img src="./images/welcome/UCILogo.png" class="icon" alt="DSP">
+              <img src="./images/welcome/UCILogo.png" class="icon" alt="UC Irvine Logo">
               <div class="company_text">Donald Bren School of Information and 
                 Computer Sciences</div>
             </div>

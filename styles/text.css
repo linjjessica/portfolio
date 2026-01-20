@@ -1,6 +1,6 @@
 .image_caption {
   font-size: 12px;
-  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-family: 'Courier New', Courier, sans-serif;
   padding-top: 2px;
   padding-left: 2px;
   text-align: left;
@@ -11,7 +11,7 @@
 
 .pbold {
   font-size: clamp(.5rem, 3vw, 1rem);
-  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-family: 'Courier New', Courier, sans-serif;
   font-weight: 400;
 }
 
@@ -19,7 +19,7 @@
   padding-bottom: clamp(1.5rem, 1vw, 4rem);
   color: #ff66c4;
   font-size: clamp(1.5rem, 3vw, 4rem);
-  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-family: 'Courier New', Courier, sans-serif;
   font-weight: 600;
 }
 
@@ -27,7 +27,7 @@
   padding-bottom: clamp(.5rem, 1vw, 4rem);
   color: #491a37;
   font-size: clamp(1rem, 2vw, 2.7rem);
-  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-family: 'Courier New', Courier, sans-serif;
   font-weight: 600;
 }
 
@@ -36,7 +36,7 @@
   padding-bottom: clamp(.5rem, 1vw, 4rem);
   color: #ff66c4;
   font-size: clamp(.5rem, 3vw, 1rem);
-  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-family: 'Courier New', Courier, sans-serif;
   font-weight: 600;
 }
 
@@ -57,7 +57,7 @@
   padding-bottom: clamp(.5rem, 1vw, 4rem);
   color: #491a37;
   font-size: clamp(.8rem, 3vw, 1.5rem);
-  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-family: 'Courier New', Courier, sans-serif;
   font-weight: 600;
   text-align: left;
 }
@@ -65,7 +65,7 @@
 .dark_large_text {
   color: #491a37;
   font-size: clamp(.8rem, 3vw, 1.5rem);
-  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-family: 'Courier New', Courier, sans-serif;
   font-weight: 600;
   text-align: left;
 }
@@ -73,7 +73,7 @@
 .dark_pink_text {
   color: #a83f80;
   font-size: clamp(.8rem, 3vw, 1.5rem);
-  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-family: 'Courier New', Courier, sans-serif;
   font-weight: 600;
   text-align: left;
 }
@@ -81,7 +81,7 @@
 .large_pink_text {
   color: #a83f80;
   font-size: clamp(.5rem, 3vw, 1rem);
-  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-family: 'Courier New', Courier, sans-serif;
   font-weight: 800;
   text-align: left;
 }
@@ -89,7 +89,7 @@
 .dark_medium_text {
   color: #491a37;
   font-size: clamp(.8rem, 2vw, 1rem);
-  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-family: 'Courier New', Courier, sans-serif;
   font-weight: 600;
   text-align: left;
 }
@@ -97,7 +97,7 @@
 .company_text {
   color: #491a37;
   font-size: clamp(.8rem, 3vw, 1.5rem);
-  font-family: 'Courier New', Courier, monospace, sans-serif, sans-serif;
+  font-family: 'Courier New', Courier, sans-serif, sans-serif;
   font-weight: 600;
   text-align: left;
 }
@@ -113,39 +113,35 @@
   font-size: clamp(.5rem, 3vw, 1rem);
 }
 
-.montserrat display-regular {
-  font-family: 'CourierPS', sans-serif;
-  src: url('../fonts/Courier-PS-Regular.ttf') format('truetype');
-  font-weight: normal;
+@font-face {
+  font-family: "CourierPS";
+  src: url("../fonts/Courier-PS-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CourierPS";
+  src: url("../fonts/Courier-PS-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Global default */
+body {
+  font-family: "CourierPS", "Courier New", Courier, monospace;
+}
+
+/* Explicitly prevent italic synthesis */
+b, strong {
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'CourierPS', sans-serif;
-  src: url('../fonts/Courier-PS-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-.courier {
-  font-family: 'CourierPS', monospace, sans-serif;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'CourierPSBold', sans-serif;
-  src: url('../fonts/Courier-PS-Bold.otf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-.courier_bold {
-  font-family: 'CourierPSBold', monospace, sans-serif;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Amsterdam', sans-serif;
+  font-family: 'Amsterdam';
   src: url('../fonts/Amsterdam-Handwriting.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -153,6 +149,7 @@
 
 .amsterdam-text {
   font-family: 'Amsterdam', sans-serif;
+  font-style: normal;
 }
 
 .email-link {
